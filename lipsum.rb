@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
-#A ruby file called lipsum.rb that can be run from the command line using ruby lipsum.rb <argument>.
-
+#A ruby file called lipsum.rb that can be run from the command line using ruby lipsum.rb <argument> <argument (optional)> to generate star wars based lipsum.
+#Second argument tells how many paragraphs to generate. Output is copied to clipboard.
+#Also can be run from [Directory]/lipsum.rb 
 
 lipsum_wanted = ARGV[0] || "none"
 ARGV[1].to_i.to_s == ARGV[1] ? num = ARGV[1].to_i : num = 1 if ARGV[1] #check if number
